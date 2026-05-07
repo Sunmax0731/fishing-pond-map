@@ -1,0 +1,120 @@
+[
+  {
+    "id": "happy-path",
+    "purpose": "全国釣り堀マップ の正常入力を検証する",
+    "items": [
+      {
+        "id": "fishing-pond-map-happy",
+        "title": "全国釣り堀マップ happy",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "prefecture": "Tokyo",
+        "address": "東京都サンプル市1-1",
+        "facilityType": "managed pond",
+        "owner": "closed-alpha",
+        "sourceUrl": "全国釣り堀マップ の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "passed",
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "missing-required",
+    "purpose": "必須項目不足を error として検出する",
+    "items": [
+      {
+        "id": "fishing-pond-map-missing",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "prefecture": "Tokyo",
+        "address": "東京都サンプル市1-1",
+        "facilityType": "managed pond",
+        "owner": "closed-alpha",
+        "sourceUrl": "全国釣り堀マップ の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "warning",
+    "purpose": "推奨項目不足を warning として検出する",
+    "items": [
+      {
+        "id": "fishing-pond-map-warning",
+        "title": "全国釣り堀マップ warning",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "prefecture": "Tokyo",
+        "address": "東京都サンプル市1-1",
+        "facilityType": "managed pond",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "warning",
+      "errors": 0,
+      "warnings": 1
+    }
+  },
+  {
+    "id": "mixed-batch",
+    "purpose": "正常、必須不足、警告を同一バッチで集計する",
+    "items": [
+      {
+        "id": "fishing-pond-map-happy",
+        "title": "全国釣り堀マップ happy",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "prefecture": "Tokyo",
+        "address": "東京都サンプル市1-1",
+        "facilityType": "managed pond",
+        "owner": "closed-alpha",
+        "sourceUrl": "全国釣り堀マップ の確認観点"
+      },
+      {
+        "id": "fishing-pond-map-missing",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "prefecture": "Tokyo",
+        "address": "東京都サンプル市1-1",
+        "facilityType": "managed pond",
+        "owner": "closed-alpha",
+        "sourceUrl": "全国釣り堀マップ の確認観点"
+      },
+      {
+        "id": "fishing-pond-map-warning",
+        "title": "全国釣り堀マップ warning",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "prefecture": "Tokyo",
+        "address": "東京都サンプル市1-1",
+        "facilityType": "managed pond",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 1
+    }
+  }
+]
