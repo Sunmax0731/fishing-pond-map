@@ -1,0 +1,21 @@
+{
+  "product": {
+    "repository": "fishing-pond-map",
+    "title": "全国釣り堀マップ"
+  },
+  "items": [
+    {
+      "id": "fishing-pond-map-happy",
+      "title": "全国釣り堀マップ happy",
+      "status": "ready",
+      "tags": [
+        "webapp"
+      ],
+      "prefecture": "Tokyo",
+      "address": "東京都サンプル市1-1",
+      "facilityType": "managed pond",
+      "owner": "closed-alpha",
+      "sourceUrl": "全国釣り堀マップ の確認観点"
+    }
+  ]
+}

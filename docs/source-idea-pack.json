@@ -1,0 +1,67 @@
+{
+  "rank": 77,
+  "domain": "WebApp",
+  "ideaNo": 13,
+  "ideaName": "全国釣り堀マップ",
+  "repository": "fishing-pond-map",
+  "publish": "GitHub Pages / Google Play派生",
+  "createdIdeaLookup": {
+    "exactPathFirst": "D:/AI/WebApp/created_idea_013_fishing-pond-map",
+    "exactPathExists": true,
+    "fallbackSearched": false,
+    "fallbackResults": [],
+    "notes": "完全一致の created_idea と ZIP を使用した。"
+  },
+  "zipLookup": {
+    "exactZip": "D:/AI/WebApp/created_idea_013_fishing-pond-map/idea_013_fishing-pond-map.zip",
+    "exactZipExists": true,
+    "requiredFiles": [
+      "metadata.json",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md"
+    ],
+    "missingRequiredFiles": []
+  },
+  "zipMetadata": {
+    "domain": "WebApp",
+    "no": 13,
+    "platform": "WebApp",
+    "field": "釣り・レジャー検索",
+    "integration": "",
+    "idea": "全国釣り堀マップ",
+    "overview": "全国の釣り堀を、場所、店舗名、料金、釣れる魚、営業時間、設備、アクセス、レビューで検索・比較できるWebマップ。現在地、都道府県、主要都市、予算、魚種、初心者向け条件から候補を絞り込む。",
+    "problem": "釣り堀の情報は公式サイト、地図、SNS、口コミに分散し、料金、魚種、営業状況、初心者や家族向けかどうかを横断比較しにくい。",
+    "similar": "Google Maps, 釣りビジョン, アソビュー!, じゃらん, Yelp",
+    "diff": "釣り堀選びに必要な料金プラン、魚種、レンタル、持ち帰り、駐車場、主要地点からのアクセス、情報確認日を地図検索と比較表に集約する。",
+    "parent": "Apps",
+    "startPromptFile": "START_PROMPT.md",
+    "documents": [
+      "START_PROMPT.md",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md",
+      "metadata.json"
+    ],
+    "repositoryName": "fishing-pond-map",
+    "repositoryTitle": "fishing-pond-map",
+    "zipFile": "idea_013_fishing-pond-map.zip",
+    "sourceZip": "D:\\AI\\WebApp\\FishingPond\\fishing-pond-web-service-docs.zip"
+  },
+  "metadataRepositoryMatches": true,
+  "metadataZipMatches": true,
+  "initialRepositoryReadme": {
+    "existedBeforeCreation": false,
+    "note": "正式 repo が存在しなかったため README.md は存在しないと記録し、domain docs と created_idea ZIP を根拠に作成した。"
+  },
+  "mojibakePolicy": "ZIP本文や既存Markdownは丸写しせず、PICKUP行、metadata、domain docsから正式docsを再構成する。",
+  "unstableEvidencePolicy": "ZIPサイズ、生成時刻、絶対一時パスはQCDS固定根拠に使わない。"
+}
