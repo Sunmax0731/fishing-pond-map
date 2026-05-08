@@ -1,0 +1,13 @@
+{
+  "product": "fishing-pond-map",
+  "title": "全国釣り堀マップ",
+  "domain": "WebApp",
+  "ideaNo": 13,
+  "platformType": "browser-web",
+  "expectedPublicTarget": "GitHub Pages / Google Play派生",
+  "browser": {
+    "evidence": "dist/web-smoke-result.json"
+  },
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
